@@ -13,6 +13,8 @@ body{
 }
 
 
+
+
 /* *************************** START OF HEADER SECTION ******************************* */
 
 .header{
@@ -34,7 +36,8 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.5s
+    transition: 0.5s;
+    padding : 10px;
 }
 
 .header .nav-bar{
@@ -63,7 +66,7 @@ body{
 
 .header-button{
     /* background-color: white; */
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
     font-size: large;
@@ -95,30 +98,29 @@ body{
 /* *************************** END OF HEADER SECTION ******************************* */
 
 /* *************************** START OF INTRO SECTION ******************************* */
-.image img{
-    height: 400px;
-    float: right;
-    top: 40%;
-    margin-top: 50px;
-    padding-right: 300px;
-    padding-top: 40px;
-    /* height: 499px;
-    margin: 5px;
-    margin-top: 11px;
-    width: 100px; */
-    /* float: right; */
+.intro{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top:50px;
 }
 
-/* .image{
-    margin: 66%;
+.image img{
+    
+    height: 400px;
+    border-radius: 50%;
+    padding-right: 20px;
+    
+    
+}
 
-}   */
+.image{
+    /* order:1 */
+
+}  
 
 .left-text{
-    text-align: left;
-    position: absolute;
-    top: 40%;
-    margin-left: 120px;
+    padding: 60px;
     font-size: 50px;
     color: #c5aa6a;
     font-weight: bold;
@@ -140,6 +142,15 @@ body{
 @keyframes animation-name{
     from{color: #c5aa6a;} 
     to{color: darkorange;}
+}
+
+@media(max-width:1250px)
+{
+    .main{
+        flex-direction: column;
+        height: 100%;
+    }
+
 }
 
 /* *************************** END OF INTRO SECTION ******************************* */
