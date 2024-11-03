@@ -1,15 +1,15 @@
 *{
     padding: 0px;
     margin: 0px;
- 
+    /* box-sizing: border-box; */
 }
 
 body{
     background-image: url(./images/backgroung.jpg);
     background-size:cover;   
     background-position: center; 
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    /* height: 100vh; */
 }
 
 
@@ -23,6 +23,7 @@ body{
     justify-content: space-between;
     padding: 0px 25px;
     align-items: center;
+    
     /* position: fixed; */
     
 }
@@ -103,6 +104,7 @@ body{
     justify-content: space-between;
     flex-direction: row-reverse;
     margin-top:50px;
+    height: 100vh;
 }
 
 .image img{
@@ -144,14 +146,80 @@ body{
     to{color: darkorange;}
 }
 
-@media(max-width:1250px)
+/* @media(max-width:1250px)
 {
     .main{
         flex-direction: column;
         height: 100%;
     }
 
+} */
+
+/* *************************** START OF HERO SECTION ******************************* */
+.hero{
+    /* background-color: rgba(168, 107, 225, 0.425); */
+    height:350px;
+    width: 100%;
+    display: flex;
+}
+.hero1{
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    gap: 20px;
+    width: 75%;
+    padding: 10px;
+    
+}
+.hero1 .left{
+    /* background-color: orange; */
+    /* height: 100%; */
+    /* width: 300px; */
+    margin-top: 30px;
+    border: 1px black solid;
+    border-radius: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.left img{
+    height: 50px;
+    width: 50px;
+    padding-top: 20px;
 }
 
-/* *************************** END OF INTRO SECTION ******************************* */
+.left h1 {
+    color:#c5aa6a;
+    padding-top: 10px;
+}
+.left p{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.left button{
+    
+}
+
+/* .middle{
+    background-color: rgb(209, 40, 181);
+    height: 100%;
+    width: 300px;
+}
+.right{
+    background-color: green;
+    height: 100%;
+    width: 300px;
+} */
+
+/* *************************** END OF HERO SECTION ******************************* */
+
+
+
 
